@@ -1,0 +1,307 @@
+/**
+* Contains only elements modified to work with the mobile version of the website 
+* $Id: euroengineerjobs_mobile.css 6422 2014-01-22 17:02:37Z maxrobson $
+*/
+
+body
+{
+	font: 12px Arial;
+	-webkit-text-size-adjust: none;
+	background-image:none !important;
+}
+
+#wrapper
+{
+	width: 100%;
+}
+
+/* lower all padding for more text space */
+#content .ebSection h1,
+#content .jobListingSection h1,
+#content .ebSection h2,
+#content .ebSection h3,
+#content .ebSection p,
+#content .ebSection .promotionsWrap  {
+padding: 5px;
+}
+/* position lists better for smaller screen */
+#content .ebSection ul li, 
+#content .ebSection ol li
+{
+	margin-left:0;
+}
+
+/* switch display for mobile devices */
+.noMobile {
+	display:none !important;	
+}
+.mobileOnly {
+	display: block;
+}
+/* No newsletter overlay */
+.ui-dialog {
+	display:none !important;
+}
+
+#header, #main{
+	width: 100%;
+}
+
+/* header */
+#header {
+	padding: 0;
+	background:none;
+}
+
+.logo {
+ width:100%;
+}
+.logo p {
+	text-align:center;
+}
+
+/* fit banner ad to screen size */
+.bannerAdFrame img{
+	width:100%;
+	float:none;
+}
+
+/* Main Content CSS */
+#content
+{
+	float:none;
+	width:auto;
+	background-image: none;	
+	background-color:#F2F1F1;
+}
+#content .jobListingSection,
+#content .ebHostedSection {	
+	margin-right: 6px;
+	float:none;
+    width: auto;
+}
+#content .ebHostedSection {
+	padding:5px;
+}
+#content .ebSection img {
+	width: 100%;
+	height:auto;
+}
+
+/* Job Lists */
+#content .jobListingSection .premiumJobContainer, 
+#content .jobListingSection .highlightedJobContainer, 
+#content .jobListingSection .basicJobContainer{
+	margin: 5px;
+}
+#content .jobListingSection p
+{
+	font-size: 1em;
+}
+#content .jobListingSection p.detailLineTwo
+{
+	font-size:1em;
+}
+#content .jobListingSection .basicJobContainer {
+	clear: both;
+	margin: 5px 25px 10px 10px;
+}
+.jobListingImage{
+  width: 15%;
+}
+.jobListingImage img {
+  width: 90% !important;
+}
+.jobDetail {
+	width:80%
+}
+.warning, .jobSearchMessage {
+	padding: 5px;	
+}
+/* Main Navigation */
+#main .navigation
+{
+	margin-top: 10px;
+    width: 100%;
+}
+#main .navigation UL LI
+{	
+	background-image: none;	
+	background-color:#5d799e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1em;
+	color: #FFFFFF;
+	text-align: center;
+	width: 25%;
+	margin-right:0px;
+	border-right: 1px solid #ddd;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box !important;    /* Firefox, other Gecko */
+    box-sizing: border-box !important;         /* Opera/IE 8+ */
+    height:25px;
+}
+#main .navigation UL LI.recruiterTab
+{
+	background-image: none;
+	background-color:#E32F2F;
+	border: none;
+}
+/*Job Search*/
+#main .jobsearch{
+	width: auto;
+	margin-right: 6px;
+	min-height:170px;	
+}
+#main .jobsearch FORM INPUT
+{
+	clear: left;
+	height: 28px;
+	width: 260px;
+}
+#main .jobsearch FORM SELECT
+{
+	height: 40px;
+	width: 280px;
+	margin-right:20px;
+}
+#main .jobsearch FORM BUTTON
+{
+	height: 40px;
+	margin-top: 9px;
+	font-size:1.3em;
+	float:left;
+	clear:left;
+	margin-bottom:10px;
+}
+#main .jobsearch h3
+{
+	margin-bottom: 5px;
+}
+#main .jobsearch .clearText{
+	font-size: 1em; 
+	margin-right: 85px;
+}
+#textSearchWrapper p#textSearchDivider{
+	color: white; 
+	font-size: 1.7em; 
+	clear:both; 
+	padding: 1px;
+	height: auto;
+}
+
+#main .jobsearch H2,
+#main .jobsearch form select,
+#main .jobsearch form input,
+#main .jobsearch H3.changeSearch,
+#main .jobsearch button,
+#textSearchWrapper p#textSearchDivider {
+	margin-left:0px;
+}
+
+/* Post job section */
+#postJobSection {
+	width:100%;
+}
+#content .sendJobBox {
+	width: auto;
+	margin-right: 6px;
+	min-height:0;
+}
+.sendJobInnerBox {
+	min-height:0;	
+}
+
+/* Job form pages */
+.JobSendDesc {
+	width:95%;
+}
+.JobSendInput { 
+	margin-left:0;
+}
+.JobSendInput input, .JobSendInput textarea{
+	width:95%;
+}
+/* ebSection Stylings */
+#content .ebSection
+{
+	float:none;
+    width: auto;
+	margin-right: 6px;
+}
+#content .jobListingSection p 
+{
+	padding:5px;
+}
+#sitemapFooter h3
+{
+	font-size: 1.5em;
+}
+/* general styles */
+#content #post_job_btn{
+	width: 100px;	
+}
+#content a.blue_button{
+	background-image: none;
+	background-color:#2F3F53;
+	font-weight: 400;
+}
+/* pages specific styles */
+#content .topSection p.recruitmentInset { 
+	float:none;
+	width:auto;
+}
+#content .recruitTestimonials p { 
+	width:auto;
+	margin-left:5px;
+}
+.newsletterSubscriptionForm {
+	margin-left:5px;
+}
+/* top sections */
+#content .topSection { 
+	width: auto;
+	margin-right:6px;
+	height:auto !important;
+	background-image:none !important;	
+}
+#content .topSection h1, #content .topSection ul {
+	padding-left:5px;
+}
+#content .topSection li {
+	margin-left:20px;
+}
+#content .topSection p { 
+	width:auto !important;
+	font-size:1.2em;
+}
+#content .ebSection img.thumbnail {
+	width:40px;
+}
+
+/* Change education box layout */
+#content .ebSection .promotionsWrap {
+	margin: 5px;
+}
+
+#content .ebSection .promotionsWrap img {
+	float: none;
+	clear:none;
+}
+#content .ebSection .promotionsWrap h2,
+#content .ebSection .promotionsWrap p {
+	margin-left: 0px;
+	padding:0;
+}
+#sitemapFooter {
+	border-left: none;
+	border-right: none;
+}
+#mobileFooterLinks {
+	text-align:center;
+	margin-top: 10px;
+}
+
+a#feedbackRight {
+	display:none;
+}

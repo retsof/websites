@@ -1,0 +1,359 @@
+/**
+ * Base CSS for Jobs: should be same on all sites
+ * $Id: base_jobs.css 6422 2014-01-22 17:02:37Z maxrobson $
+ */
+ 
+/* Job Lists */
+.alignleft {
+	margin: 4px 8px 5px 0;
+}
+#content .jobListingSection{
+	padding: 5px 5px 10px;
+	margin: 8px 0 0 6px;
+	background-color: #E1E9F2;
+	float: left;
+	width: 665px;
+	border:1px solid silver;
+	color: #2F3F53;
+}
+#content .jobListingSection H1
+{
+	font-size: 1.8em;
+	padding: 10px 0 5px 25px;
+}
+#content .jobListingSection H2
+{
+	padding-top:2px;
+}
+#content .jobListingSection p
+{
+	padding:5px 25px;
+}
+#content .jobListingSection .jobDetail {
+   max-width: 510px;
+   display:inline-block;
+   vertical-align:top;
+}
+#content .jobListingSection .jobListingImage {
+   max-height:52px;
+   display:inline-block;
+   vertical-align:top;
+}
+#content .jobListingSection .jobOrgImg
+{
+	background-color: #FFFFFF;
+	border: 1px solid #5C799C;
+	margin-left: 2px;
+	max-height: 40px;
+	max-width: 80px;
+	overflow: hidden;
+}
+#content .jobListingSection p.detailLineOne, 
+#content .jobListingSection p.detailLineTwo {
+	padding: 0;
+}
+
+#content .jobListingSection .basicJobContainer { clear: both; margin:5px 25px 10px 25px; }
+#content .jobListingSection .basicJobContainer h2 {
+	font-weight: bold;
+	padding:0px;
+}
+#content .jobListingSection .basicJobContainer h2 a { text-decoration: none; padding-right:5px; }
+#content .jobListingSection .basicJobContainer h2 a:hover { text-decoration: underline;}
+#content .jobListingSection .basicJobContainer p { padding:0px;}
+#content .jobListingSection .basicJobContainer p.detailLineOne
+{
+	padding-top:2px;
+}
+
+#content .jobListingSection p.detailLineTwo
+{
+	padding-top:2px;
+	padding-bottom: 2px; 
+	color: #666;
+	font-size: 1.1em;
+	font-weight:lighter;
+}
+#content .jobListingSection .basicJobContainer p.detailLineTwo {
+	padding-bottom:0;
+}
+#content .jobListingSection .premiumJobContainer
+{
+	border: 1px solid #E8EFF6;
+	margin: 5px 25px 10px;
+}
+#content .jobListingSection .premiumJobContainer p {
+
+}
+#content .jobListingSection .premiumJobContainer p.detailLineOne
+{
+	padding-top:2px;
+	padding-bottom:0px;
+}
+#content .jobListingSection .premiumJobContainer H2
+{
+	padding-top:2px;
+	font-weight: bold;
+}
+#content .jobListingSection .premiumJobContainer H2 a{
+	padding-right:5px;
+}
+#content .jobListingSection .highlightedJobContainer
+{
+	background: white;
+	margin: 5px 25px 10px;
+}
+#content .jobListingSection .highlightedJobContainer H2
+{
+}
+#content .jobListingSection .highlightedJobContainer H2 a{
+	padding-right:5px;
+}
+#content .jobListingSection .highlightedJobContainer p {
+}
+#content .jobListingSection .highlightedJobContainer p.detailLineOne
+{
+	padding-top:2px;
+	padding-bottom:0px;
+}
+
+/*More jobs in CSS */
+#MoreJobsIn{
+	margin-top: 0px;
+	color:grey;
+	overflow:hidden;
+	background-color:#EFEDED;
+	padding: 3px;
+}
+#MoreJobsIn ul{
+	margin-top: 1px;
+	padding: 0;
+	list-style-type: none;
+}
+#MoreJobsIn ul li {
+	display: inline;
+	padding-right: 8px;
+}
+#MoreJobsIn a {
+	color:grey;
+}
+#hostedMoreJobsIn{
+	margin-left: 8px;
+	margin-top: 5px;
+}
+#hostedMoreJobsIn ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	margin-bottom:3px;
+}
+#hostedMoreJobsIn ul li {
+	display: inline;
+	padding-right: 8px;
+}
+#MoreJobsIn .sendToFriend {
+	margin-top: 3px;
+}
+#hostedMoreJobsIn .sendToFriend {
+	margin-top: 3px;
+}
+#MoreJobsIn li.jobShareIcon, #hostedMoreJobsIn li.jobShareIcon{
+	padding-right: 3px;
+}
+#moreJobsInFrame {
+	padding: 2px 0 5px 4px;
+	background: #EFEDED;
+}
+#moreJobsInFrame li {
+	color: #2F3F53;
+}
+#moreJobsInFrame li a {
+	color:#003366;
+}
+.removeFrame{
+	float:left;
+	margin-top:4px;
+	font-size:1.2em;
+}
+
+.jobLinkPremiumDivider { border-top: 1px solid silver; margin: 8px 0 -8px 0; padding: 4px 0 0px 0; }
+.jobLinkPremiumDivider2 {  }
+.jobLinkSectionDivider { border-top: 1px solid silver; margin: 20px 0 5px 0; padding: 4px 0 0px 0; line-height: 1px; }
+#promo_feature_jobs { border: 1px solid silver; padding: 4px; margin: 0 0 5px 0; }	/* Used on home page */
+
+/* Job expiry date less prominant */
+
+.LatestJobsDate{color: #666666; font-size: 1em; vertical-align:bottom; font-weight:lighter;}
+.LatestJobsDeadline{color: #666666; font-size: 1em; vertical-align:bottom; font-weight:lighter;}
+
+/*Basic Send Job CSS */
+.JobSendRowBasic { clear:both; padding-top: 3px;	}
+.JobSendRowBasic input { width:400px;  	}
+.JobSendRowBasic #JobSendSubmit { width:120px; 	}
+.JobSendRowBasic .JobSendInput { margin-left:140px; }
+.JobSendRowBasic .JobSendDesc { float:left; width:140px; }
+
+/* High Vis and Standard send jobs CSS */
+.JobSendFieldSet{
+	border:none;
+	margin: 0 0 0.5em 0;
+	padding:5px
+}
+
+.JobSendRow {
+	padding-left:25px;
+	clear:both;
+	padding-top: 2px;
+	font-size:1.2em;
+}
+
+.JobSendRow input {
+	width:370px;
+	padding:1px;
+}
+
+.JobSendDesc { float:left; 	width:95px; }
+.JobSendInput { margin-left:95px; }
+
+/* Highlighted Infobox CSS */
+/* Main containing div, with shadow to look like standard infobox p tag*/
+#highlightedJobsInfoBoxContain{
+	padding:0px;
+	padding-top:2px;
+	height:60px; /*Height, so it doesn't collapse when content is removed */
+	overflow: hidden;
+	background-color:#E8EFF6;
+	width:278px;
+	
+}
+
+#highlightedJobsInfoboxWrapper{ padding:0px;margin:0px; } 					/*Wrapper div,  faded using javascript to hide content*/
+#highlightedJobsInfoboxImg{ margin:0 0 0 10px ; float:left;} 					/*Holds organisation image*/
+#highlightedJobsInfoboxImg img{ width:80px; height: 40px;}
+#highlightedJobsInfoboxTxt{ margin:0 10px 0 0;line-height: 12px; float:right; width:170px; text-align:center; } 	/*Holds job title image*/
+#highlightedJobsInfoboxBtmText{ text-align:right; background-color:red;}					/*Removes underline from job title*/
+#highlightedJobsInfoboxBtmText a{ color:silver; font-size:0.9em; } 			/*Holds 'your job here' text*/
+
+
+/* POST JOB */
+#postJobSection {
+	width:680px;
+}
+#content .sendJobBox {
+	vertical-align: top;
+	display:inline-block;
+    width: 48%;
+	border:3px solid black;
+	margin:8px 0 0 6px;
+	min-height: 290px;
+}
+.sendJobHighVis, .sendJobStandard {
+	background: #fff;
+}
+.sendJobPackages p {
+	font-size:1.4em;
+}
+#content .sendJobBox ul {
+	padding: 10px 25px 0;
+}
+#content .sendJobBox li {
+	margin-left: 15px;
+	color:#304155;
+	font-size: 1.4em;
+}
+#content .sendJobBox h2 {
+	font-size: 1.8em;
+	padding:15px 0 0 11px;
+}
+#content .sendJobBox p {
+	padding: 10px 25px 0;
+}
+.sendJobInnerBox {
+	margin:0;
+	padding:0;
+	min-height:240px;
+}
+.postJobButtons {
+	text-align:center;
+}
+
+a.website_colour_button{
+    display: inline-block;
+    height:17px;
+    padding: 3px 18px 0px 18px;
+    text-decoration: none;
+    margin:10px 6px 10px 0;
+    font-weight:bold;
+    cursor:pointer;
+}
+a.website_colour_button:hover{
+    color:black !important;
+}
+a.blue_button_outline{
+	background-color:#304055;
+	border:thin solid #829CBE;
+    display:inline-block;
+    height:16px;
+    padding: 2px 18px 0px 18px;
+    text-decoration: none;
+    margin:10px 6px 10px 0;
+    color: white !important;
+    font-weight:bold;
+    cursor:pointer;
+}
+/* details popup */
+.detailsPopup {
+	text-align: left;
+	font-family: arial;
+}
+.detailsPopup a {
+	font-weight: bold;
+}
+.detailsPopup img {
+	max-width:400px;
+}
+.detailsPopup ul {
+	padding: 5px 0 5px 20px;
+}
+h2.postJobPrice {
+	font-size:1.4em;
+}
+ul.relatedSearchLinksJobNotFound{
+	list-style:none;
+	margin-left: 25px;
+}
+ul.relatedSearchLinksJobNotFound li{
+	margin-left: 0px !Important;
+}
+#content .jobSearchLinkListTable h3 {
+	font-size:1em;
+	padding: 10px 0 0 0;
+}
+#content .jobSearchLinkListTable a {
+	color:#135B98;
+}
+#content .ebHostedSection span{
+	margin-top: 8px; 
+	margin-right: 5px
+}
+#content #hostedJobFooter{
+	clear:both;
+	margin:0px 14px 0px 8px;
+}
+#content #jobDisplaySocialMedia{
+	text-align:left; 
+	float:left; 
+}
+#content #jobDisplaySocialMedia span{
+	float:left; 
+	margin-top: 8px; 
+	margin-right: 5px
+}
+#content #jobDisplaySocialMedia img{
+	border: none;	
+}
+#content #jobDisplaySocialMedia a{
+	float:left; 
+	display: block;
+	margin-right: 2px;
+}

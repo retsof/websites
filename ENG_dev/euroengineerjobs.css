@@ -1,0 +1,118 @@
+/**
+ * Site specific CSS: EuroEngineerJobs only
+ * $Id: euroengineerjobs.css 6372 2014-01-13 09:34:25Z jamescollier $
+ */
+body
+{
+	color: #2F3F53;
+	background: #FFFFFF url(images/site_background_initial.jpg) fixed repeat-x bottom;
+}
+/* different colour for recruit tab  */
+#main .navigation ul li a:hover {
+	color: #ff7882;
+}
+#main .navigation ul li.recruiterTab a:hover
+{
+	color: #000;
+}
+#main .navigation ul li.recruiterTab
+{
+	background: url(images/navigation_tab_recruit.png);
+}
+#sidebar form button:hover
+{
+	color: #FF7882;
+}
+/* from base_jobs.css */
+#content .jobListingSection .highlightedJobContainer
+{
+	border: 1px solid #E32F2F;
+}
+#contentCategoryList td
+{
+	font-size: 1.1em;
+	padding: 10px 20px 0;
+	color: #2F3F53;
+}
+
+/* send jobs  */
+#content .sendJobHighVis{
+	border-color:#E32F2F;
+}
+a.website_colour_button{
+    background: url('images/red_button_bg.jpg') repeat-x top right;
+    color: white !important;
+    
+}
+#content .sendJobBasic li {
+	list-style-image: url(images/red_circle_bullet.png);
+}
+#content .sendJobPackages li {
+	list-style-image: url(images/red_circle_bullet.png);
+}
+#content .sendJobStandard li, #content .sendJobHighVis li {
+	list-style-image: url(images/black_tick_bullet.png);
+}
+#content .sendJobHighVis ul.highVisList li {
+	list-style-image: url(images/red_tick_bullet.png);
+}
+#highlightedJobsInfoBoxContain{
+	border:1px solid #E32F2F;
+}
+#sitemapFooter
+{
+	background: #FFEDEE;
+	border: 1px solid silver;
+}
+#content a.blue_button:hover {
+    color:#FF7882 !important;
+}
+a.blue_button_outline:hover{
+	color:#ff7882 !important;
+}
+.jobSearchLinkListTable {
+	width:575px;
+}
+#content .recruitSection {
+	border:1px solid #E32F2F;
+}
+#main .jobsearch form button:hover{
+	color: #E32F2F;
+}
+
+/* Facebook like box customisations */
+p.facebookShareWrapper{
+	min-height: 155px;   
+}
+.fan_box .connections{
+    min-height: 75px !important;
+}
+.fan_box .total{
+	display:none;
+}
+#main .jobsearch form select
+{
+	width: 185px;
+}
+.partnersBox {
+	background-color:#E8EFF6;
+	border:1px solid #E8EFF6;
+}
+.partnersBox p {
+	float:left;
+	text-align:center;
+	width:130px;
+}
+#content .topSection{
+	border-color: #E32F2F;
+}
+#content .jobSearchLinkListTable h2 {
+	padding-left:0;
+}
+a#feedbackRight {
+    background:url("images/feedback_tab_white.png") no-repeat scroll 50% 50% #5e7a9f;
+    border-top: 1px solid #E32F2F;
+    border-left: 1px solid #E32F2F;
+    border-bottom: 1px solid #E32F2F;
+    border-right: 0px solid #E32F2F;
+}

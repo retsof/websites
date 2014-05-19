@@ -1,0 +1,1228 @@
+<style>
+/**
+* Base CSS: should be same on all sites
+* $Id: base.css 6491 2014-02-04 16:41:33Z maxrobson $
+*/
+/*-- Defaults ------------------------*/
+.small {
+	font:1.1em Verdana;
+}
+.bold {
+	font-weight:700;
+}
+.warning {
+	font-weight:700;
+	color:red;
+}
+.formExplainText, .formExplainText a {
+	color:gray;
+}
+ul.small li {
+	padding:0;
+	margin:0 0 0 5px;
+	line-height:1em;
+}
+
+.floatright {
+	float:right;
+}
+/*Clear all previous floating models. line-height needed for IE*/
+.floatclear {
+	clear:both;
+	height:0;
+	margin:0;
+	padding:0;
+	line-height:0;
+}
+
+
+/* General Styling */
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	text-align:center;
+	font-size:10px;
+	font-family:arial;
+}
+
+body.popup {
+	text-align:center;
+	background:#E1E9F2;
+}
+
+body.popup .ebSection {
+	color:#2F3F53;
+	background:#E1E9F2;
+	margin:2px 10px 0;
+}
+
+body.popup .ebSection img {
+	border:1px solid silver;
+}
+
+body.popup .ebSection p,body.popup .ebSection ul {
+	text-align:left;
+	padding:10px;
+}
+
+body.popup .ebSection ul {
+	margin-left:15px;
+}
+
+body.popup .ebSection h1,body.popup .ebSection h2 {
+	color:#2F3F53;
+	text-align:left;
+	padding:5px 0 0 10px;
+}
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active {
+	color:#2f3f53!important;
+}
+
+h1 {
+	font-size:1.8em;
+}
+
+p,h2,h3,h4,li {
+	font-size:1.2em;
+}
+
+a {
+	text-decoration:none;
+	color:#036;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+img {
+	border:0;
+}
+
+.break {
+	font-size:0;
+	width:0;
+	height:0;
+	clear:both;
+}
+
+p {
+	padding:5px 0;
+	color:#2F3F53;
+	text-align:left;
+}
+
+#wrapper {
+	width:1025px;
+	margin:auto;
+	text-align:left;
+	padding-bottom:20px;
+}
+
+/* Site Header CSS */
+#header {
+	margin:10px 0 5px;
+	background-color:#FFF;
+	padding:5px 4px 10px;
+	height:90px;
+}
+
+#header .logo {
+	float:left;
+	padding-top:10px;
+}
+#header .logo p {
+	padding:0;
+}
+
+#header .bannerAdFrame {
+	float:right;
+}
+
+/* Main Content CSS */
+#main {
+	color:#2F3F53;
+	clear:both;
+	padding-bottom: 10px;
+}
+
+/* MAIN NAVIGATION */
+#main .navigation {
+	float:left;
+	margin-top:10px;
+}
+
+#main .navigation ul {
+	list-style-type:none;
+}
+
+#main .navigation ul li {
+	background:url(images/navigation_tab_blue.png) repeat-x;
+	height:22px;
+	float:left;
+	font-weight:700;
+	padding-top:5px;
+	color:#FFF;
+	text-align:center;
+	width:133px;
+	margin-right:3px;
+}
+
+#main .navigation ul li a,#main .navigation ul li.recruiterTab a {
+	color:#FFF;
+}
+
+#main .navigation ul li a:hover {
+	text-decoration:none;
+}
+
+#main .navigation ul li.recruiterTab a:hover {
+	color:#000;
+}
+
+/*  SECONDARY NAVIGATION  */
+#main .navigation2 {
+	float:right;
+	margin:10px 0 0;
+	height: 24px;
+}
+
+#main .navigation2 ul {
+	list-style-type:none;
+}
+
+#main .navigation2 ul li {
+	padding:0 10px;
+	float:left;
+	border-right:2px solid #304055;
+}
+
+#main .navigation2 ul li.nav2last {
+	border:none;
+	padding:0 6px 0 10px;
+}
+
+#main .navigation2 ul li a {
+	color:#304055;
+}
+
+
+/*  JOB SEARCH   */
+#main .jobsearch {
+	background:#5E7A9F url(images/gradianted_blue_background.jpg) repeat-x bottom;
+	width:656px;
+	min-height:108px;
+	margin:8px 0 10px 6px;
+	padding:0 10px;
+	color:#FFF;
+}
+
+#main .jobsearch H3 a {
+	color:#FFF;
+}
+
+#main .jobsearch H2 {
+	font-size:1.4em;
+	margin-left:8px;
+	padding-top:7px;
+}
+
+#main .jobsearch H3.changeSearch {
+	float:left;
+	font-size:1em;
+	margin-left:8px;
+	margin-top:20px;
+}
+
+#main .jobsearch H3.searchHelp {
+	float:right;
+	font-size:1em;
+	margin-right:8px;
+	margin-top:20px;
+}
+
+#main .jobsearch form {
+}
+
+#main .jobsearch form input {
+	float:left;
+	width:260px;
+	padding:4px;
+	margin:8px 0 0 8px;
+	border:1px solid #DDD;
+	font-size:1.2em;
+}
+
+#main .jobsearch div {
+}
+
+#dropDownSearchWrapper,#textSearchWrapper {
+	padding-top:5px;
+}
+
+#main .jobsearch form select {
+	float:left;
+	margin:8px 0 0 8px;
+	border:1px solid #DDD;
+	padding:1px 1px 2px;
+	font-size:1.2em;
+	padding:3px;
+}
+
+#main .jobsearch button {
+	margin:8px 0 0 15px;
+	background-color:#304055;
+	color:#FFF;
+	border:thin solid #829CBE;
+	font-size:1.4em;
+	height:24px;
+	padding:0 2px;
+}
+
+#textSearchWrapper p#textSearchDivider {
+	color:#FFF;
+	font-size:1.4em;
+	font-weight:700;
+	float:left;
+	margin:7px 0 0 8px;
+}
+
+/*  -----Live Search----- */
+.liveSearchDiv {
+	position:absolute;
+	border:none;
+	z-index:100;
+	background-color:#fff;
+	border-top:0;
+	display:none;
+}
+
+.liveSearchDiv li {
+	list-style:none;
+	margin:0;
+	border-left:1px silver solid;
+	border-right:1px silver solid;
+}
+
+.liveSearchDiv li.label {
+	font-style:italic;
+	color:#D0CFCF;
+}
+
+.liveSearchDiv ul {
+	line-height:17px;
+	font-family:verdana;
+	font-size:1.1em;
+	margin:0;
+	background-color:#FFF;
+}
+
+a.liveSearchLink {
+	position:relative;
+	display:block;
+	text-decoration:none;
+	color:#036;
+	width:100%;
+}
+
+.liveSearchDiv a:hover,a.liveSearchLinkHover,a.liveSearchLinkHover :visited {
+	position:relative;
+	display:block;
+	background-color:#5E7A9F;
+	color:#fff;
+	text-decoration:none;
+	width:100%;
+}
+
+/* Main Content Container */
+#content {
+	width:695px;
+	float:left;
+	padding-top:2px;
+	background:url(images/main_col_background.png) top right;
+	text-align:left;
+	padding-bottom:10px;
+}
+
+#content a.blue_button {
+	background:transparent url(images/blue_btn_bg.jpg) repeat-x scroll top right;
+	font:normal arial, sans-serif;
+	margin:10px 6px 10px 0;
+	height:20px;
+	padding:4px 18px;
+	text-decoration:none;
+	color:#FFF!important;
+	font-weight:700;
+	white-space:nowrap;
+}
+
+/* ebSection Stylings */
+#content .ebSection {
+	padding:5px 5px 10px;
+	margin:8px 0 0 6px;
+	background-color:#E1E9F2;
+	float:left;
+	width:665px;
+	border:1px solid silver;
+}
+
+/* Light colour for ebSection links */
+#content .ebSection a {
+	color:#135B98;
+}
+
+/* Darker colour for header links */
+#content .ebSection h1 a {
+	color:#036;
+}
+
+#content .ebSection h2 a {
+	color:#036;
+}
+
+#content .ebSection ul,#content .ebSection ol {
+	padding:5px 0 5px 25px;
+}
+
+#content .ebSection ul li,#content .ebSection ol li {
+	margin-left:15px;
+	padding:1px 0 0 1px;
+}
+
+#content .ebSection H1 {
+	font-size:1.8em;
+	padding:10px 0 5px 25px;
+}
+
+#content .ebSection H2 {
+	padding:10px 0 0 25px;
+}
+
+#content .ebSection H3 {
+	font-size:.9em;
+	padding:10px 0 0 25px;
+}
+
+#content .ebSection p {
+	padding:5px 25px;
+}
+
+#content .ebSection p.jobSubmissionWarning {
+	color:red;
+	border:1px solid red;
+	text-align:center;
+	font-weight:700;
+}
+
+#content .ebSection img.thumbnail {
+	margin:20px;
+	float:left;
+}
+
+#content .ebSection .thumbnailText {
+	margin-left:75px;
+}
+
+#content .ebHostedSection {
+	padding:5px 25px 10px;
+	margin:8px 0 0 6px;
+	background-color:#E1E9F2;
+	float:left;
+	width:625px;
+	border:1px solid silver;
+}
+
+/* Light colour for ebSection links */
+#content .ebHostedSection a {
+	color:#135B98;
+}
+
+/* Darker colour for header links */
+#content .ebHostedSection h1 a {
+	color:#036;
+}
+
+#content .ebHostedSection h2 a {
+	color:#036;
+}
+
+#content .ebHostedSection img {
+	border:1px solid silver;
+}
+
+#content .ebHostedSection ul,#content .ebHostedSection ol {
+	padding-top:10px;
+}
+
+#content .ebHostedSection ul li,#content .ebHostedSection ol li {
+	list-style-position:outside;
+	padding:4px 0;
+	margin-left:15px;
+}
+
+#content .ebHostedSection ul ul li,#content .ebHostedSection ol ol li {
+	list-style-type:disc;
+	font-size:1em;
+}
+
+#content .ebHostedSection ol li {
+	margin-left:17px;
+}
+
+#content .ebHostedSection {
+	color:#2F3F53;
+}
+
+#content .ebHostedSection H1 {
+	font-size:1.8em;
+	padding:10px 0 5px;
+}
+
+#content .ebHostedSection H2 {
+	padding-top:10px;
+	font-size:1.4em;
+}
+
+#content .ebHostedSection H3 {
+	padding-top:10px;
+}
+
+#content .ebHostedSection H4 {
+	padding-top:10px;
+	font-style:italic;
+}
+
+#content .ebHostedSection P {
+	padding:5px 0;
+}
+
+.recruitTestimonials p {
+	display:block;
+	width:600px;
+	border:1px solid silver;
+	margin:10px 2px 0 25px;
+	padding:5px!important;
+	background:#E2E2E2 url(images/inline_infobox_gradient.png) repeat-x top;
+}
+
+.recruitTestimonials p:last-child {
+	font-size:1.2em;
+	border:none;
+	background:none;
+	margin-left:20px;
+}
+
+#content .ebSection .mainSectionBox {
+	max-width:250px;
+	float:right;
+	padding:5px;
+	border:1px solid silver;
+	margin:0 10px 5px 5px;
+	background:#E2E2E2 url(images/inline_infobox_gradient.png) repeat-x top;
+}
+
+#content .ebSection .mainSectionBox i {
+	font-size:1.2em;
+}
+
+#content .ebSection .mainSectionBox P {
+	color:#333;
+	padding:3px;
+}
+
+#content .ebSection .mainSectionBox .pbold {
+	font-weight:700;
+	color:#036;
+}
+
+/* Added for promotion ads on education, law firm etc pages */
+#content .ebSection .promotionsWrap {
+	background-color:#FFF;
+	margin:0 25px 10px;
+	padding:5px;
+	border:1px solid silver;
+}
+
+#content .ebSection .promotionsWrap img {
+	width:120px;
+	height:60px;
+	float:left;
+	clear:left;
+	margin-top:3px;
+}
+
+#content .ebSection .promotionsWrap p {
+	padding:0;
+	margin-left:135px;
+	font-size:1.2em;
+}
+
+#content .ebSection .promotionsWrap h2 {
+	padding:0;
+	margin:0 0 5px 135px;
+	font-size:1.3em;
+	font-weight:700;
+}
+
+/*////////////////
+// Right Column //
+////////////////*/
+#sidebar {
+	width:327px;
+	float:right;
+	padding:10px 0 0;
+	background:url(images/right_col_background.png);
+}
+
+#sidebar ul,#sidebar ol {
+	padding:5px 5px 5px 15px;
+}
+
+/* STANDARD BOX */
+#sidebar .infoBox {
+	background:#2D3E52 url(images/gradianted_blue_background.jpg) repeat-x center top;
+	margin:0 0 10px 12px;
+	width:280px;
+	padding:10px;
+}
+
+#sidebar .infoBox h3 {
+	font-weight:700;
+	padding:0 0 10px;
+}
+
+#sidebar .infoBox h3 a {
+	color:#FFF;
+}
+
+#sidebar .infoBox p {
+	background:#E8EFF6;
+	padding:4px;
+	margin-bottom:5px;
+}
+
+#sidebar .infoBox p img {
+	border:1px solid silver;
+}
+
+/* TOP JOBS */
+.sidebarTopJobs h3 {
+	float:left;
+	width:100px;
+}
+
+.sidebarTopJobs table {
+	width:100%;
+	height:60px;
+}
+
+#sidebar #highlightedJobsInfoboxBtmText {
+	padding-top:0;
+	padding-bottom:0;
+	margin-right:3px;
+	float:right;
+	background-color:transparent;
+}
+
+#highlightedJobsInfoBoxContain {
+	clear:both;
+}
+
+#highlightedJobsInfoboxWrapper {
+	padding:0;
+	margin:0;
+}
+
+#highlightedJobsInfoboxImg {
+	margin-bottom:0;
+}
+
+#highlightedJobsInfoboxTxt {
+	margin-bottom:0;
+}
+
+/* POST JOB BUTTON */
+#sidebar .box {
+	margin-bottom:7px;
+	text-align:center;
+}
+
+/* EMAIL FORM */
+#sidebar FORM {
+	background:#304055 url(images/gradianted_blue_background.jpg) repeat-x top;
+	border:1px solid #DDD;
+	margin:0 0 10px 10px;
+	padding:5px 0 10px;
+	width:301px;
+}
+
+#sidebar FORM H2 {
+	padding:0 0 2px 10px;
+}
+
+#sidebar FORM H3 {
+	padding-left:10px;
+}
+
+#sidebar FORM a {
+	color:#FFF;
+	width:299px;
+}
+
+#sidebar FORM INPUT {
+	float:left;
+	border:0;
+	margin:8px 0 0 8px;
+	background-color:#FFF;
+	width:200px;
+	height:20px;
+}
+
+#sidebar FORM BUTTON {
+	float:right;
+	width:67px;
+	height:22px;
+	background-color:#304055;
+	margin:1px 10px 0 0;
+	color:#FFF;
+	border:thin solid #829CBE;
+}
+
+.newsletterFormPrivacyPolicy {
+	padding:5px 10px 0;
+	color:silver;
+	clear:both;
+	font-size:1em;
+}
+
+/* IMU OLD */
+#sidebar .imuWrapper {
+	background:none;
+	margin:0 0 10px 12px;
+	width:299px;
+}
+
+/* TAG CLOUD  */
+#sidebar .tagCloudWrapper {
+	margin:0 0 10px 12px;
+	width:299px;
+	text-align:justify;
+}
+
+/* CAREER GUIDE BOX */
+#sidebar .infoBox .careerInfoBoxInner {
+	background:#E8EFF6;
+	padding:10px;
+}
+
+#sidebar .infoBox .careerInfoBoxInner img {
+	float:right;
+	margin-right:20px;
+	margin-top:10px;
+}
+
+#sidebar .infoBox .careerInfoBoxInner h3 {
+	float:left;
+}
+
+#sidebar .infoBox .careerInfoBoxInner a {
+	color:#2F3F53;
+}
+
+#sidebar .infoBox .careerInfoBoxInner p {
+	float:left;
+	font-size:1.2em;
+	width:130px;
+	padding-left:0;
+}
+
+/* EDUCTAION PROMOTIONS BOX */
+.educationSidebarBox {
+	background-color:#E8EFF6;
+	border:1px solid #E8EFF6;
+}
+
+.educationSidebarBoxLeft {
+	float:left;
+	width:120px;
+	margin-left:10px;
+	margin-top:5px;
+	margin-bottom:2px!important;
+}
+
+.educationSidebarBoxRight {
+	float:right;
+	width:120px;
+	text-align:center;
+	margin-right:10px;
+	margin-top:20px;
+}
+
+/* POST JOB BOXES */
+#sidebar .jobSendInfoBox {
+	border:1px solid silver;
+	background: #e2e2e2; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e2e2e2 64%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(64%,#e2e2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e2e2e2 64%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e2e2e2 64%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e2e2e2 64%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#e2e2e2 64%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+	margin:0 0 10px 12px;
+	width:278px;
+	padding:10px;
+}
+
+#sidebar .jobSendInfoBox h2 {
+	padding-top:5px;
+	font-size:1.4em;
+}
+
+#sidebar .jobSendInfoBox a {
+	color:#135B98;
+}
+
+/* Footer Styling */
+#sitemapFooter {
+	margin-top:10px;
+	color:#6E6E6E;
+	text-align:center;
+	padding:8px;
+}
+
+#sitemapFooter a {
+	color:#6E6E6E;
+}
+.footerbox {
+	display:inline-block;
+	vertical-align:top;
+	font-size:1.1em;
+	padding:0 5px;
+	text-align:left;
+}
+#sitemapFooter table {
+	margin:0 auto;
+}
+
+#sitemapFooter td {
+	font-size:1.1em;
+	padding:0 5px;
+	text-align:left;
+	vertical-align:top;
+}
+
+#sitemapFooter h3 {
+	font-size:1em;
+	font-weight:700;
+	margin:5px 0 1px;
+}
+
+#sitemapFooter p {
+	font-size:1.1em;
+	color:#6E6E6E;
+}
+
+#sitemapFooter .shareContainer {
+	clear:left;
+	margin-top:5px;
+}
+
+#sitemapFooter .shareContainer img {
+	width:32px;
+	height:32px;
+}
+
+#sitemapFooter .shareContainer a {
+	display:block;
+	float:left;
+}
+
+.footerCopyright {
+	text-align:center;
+}
+
+/* Scrolling Premium Logo CSS */
+#animatedPremiumJobLogoOuterContainer {
+	height:50px;
+	margin-left:6px;
+	position:relative;
+	padding-bottom:10px;
+	background-color:#FFF;
+	border:1px solid silver;
+	width:675px;
+}
+
+#animatedPremiumJobLogoOuterContainerRight {
+	height:50px;
+	width:20px;
+	float:right;
+	position:relative;
+	z-index:10;
+	display:none;
+	background-image:url(images/rightanimatedlogofade.png);
+}
+
+#animatedPremiumJobLogoOuterContainerLeft {
+	height:50px;
+	width:20px;
+	float:left;
+	position:relative;
+	z-index:10;
+	display:none;
+	background-image:url(images/leftanimatedlogofade.png);
+}
+
+#animatedPremiumJobLogoImageScroller {
+	height:50px;
+	position:relative;
+	overflow:hidden;
+}
+
+#animatedPremiumJobLogoViewer {
+	height:50px;
+	overflow:hidden;
+	margin:auto;
+	position:relative;
+	top:10px;
+}
+
+#animatedPremiumJobLogoViewer img {
+	height:40px;
+	width:80px;
+	margin:0 10px;
+}
+
+#animatedPremiumJobLogoImageScroller a img {
+	border:0;
+}
+
+.jobSearchLinkListTable {
+	font-size:1.1em;
+}
+
+.jobSearchLinkListTable td {
+	text-align:left;
+	vertical-align:top;
+}
+
+.newsletterSubscriptionForm {
+	font-size:1.2em;
+	margin:0 25px;
+}
+
+fieldset.emailTemplate {
+	font-size:1.2em;
+	border:1px solid silver;
+	padding:10px;
+	margin:10px;
+}
+
+fieldset.emailTemplate input[readonly=readonly],fieldset.emailTemplate textarea[readonly=readonly] {
+	background-color:#EFEFEF;
+}
+
+/* COOKIE MESSAGE*/
+#cookieWrapper {
+	position:fixed;
+	bottom:0;
+	display:none;
+	font-size:1.2em;
+	background-color:#FFF;
+	color:#000;
+	border-top:solid 1px silver;
+	width:100%;
+	opacity:0.9;
+}
+
+#cookieWrapper p {
+	text-align:center;
+	font-size:1em;
+}
+
+#cookieWrapper a {
+	text-decoration:underline;
+}
+
+#acceptCookie {
+	display:inline-block;
+	padding:3px;
+	background:#333;
+	color:#FFF;
+}
+
+/*HINT POPUP*/
+.hint {
+	background-color: #F0F0F0;	/*IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #888 400%);	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #888 400%);	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #888 400%);	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(4, #888));	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #888 400%);	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #888 400%);	
+	border: 1px solid #BBB;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 2px 6px #BBB;
+	display: none;
+	font-weight: normal;
+	margin-left: 10px;
+	margin-top: -4px;
+	padding: 10px 12px;
+	position: absolute;
+	max-width: 200px;
+	z-index: 99999;
+}
+
+/* Generic Blue Top Section 
+Used as a header to convey key bulleted information about the page. Eg About Us, Recruit */
+#content .topSection {
+	width:665px;
+	border:1px solid #000;
+	/* Should be overwritten per site */
+	margin:6px 10px 0 6px;
+	padding:5px 5px 20px;
+	background:#5E7A9F url(images/gradianted_blue_background.jpg) repeat-x bottom;
+	color:#FFF;
+}
+
+#content .topSection h1 {
+	padding:10px 0 2px 20px;
+}
+
+#content .topSection ul {
+	padding:10px 0 0 25px;
+}
+
+#content .topSection li {
+	list-style-image:url(images/star_bullet.png);
+	padding-top:2px;
+	margin-left:15px;
+	font-size:1.5em;
+}
+
+#content .topSection li.first {
+	padding-top:8px;
+}
+
+#content .topSection p {
+	font-size:1.5em;
+	padding:10px 25px 0;
+	color:#FFF;
+}
+
+#content .topSection a {
+	color:#FFF;
+	font-weight:700;
+	text-decoration:underline;
+}
+
+#content .topSection p.mediaKit {
+	clear:none;
+	width:300px;
+}
+
+#content .topSection .topSectionSendJobWrapper {
+	clear:both;
+	padding:0;
+	margin-top:3px;
+}
+
+#content .topSection p.topSectionSendJobButton {
+	float:left;
+	padding-right:0;
+}
+
+#content .topSection p.topSectionSendJobText {
+	float:left;
+	padding-left:11px;
+	padding-top:17px;
+}
+
+#content .topSection p.recruitmentInset {
+	width:250px;
+	float:right;
+	clear:right;
+	padding:10px;
+	font-size:1.1em;
+}
+
+#content .topSection p.heroImageDescription {
+	width:310px;
+}
+#content .topSection.contactTopSection {
+	background: #5E7A9F url('images/telephone_fade_bg.jpg') repeat-x bottom; 
+	height: 195px;
+}
+#content .topSection.careerTopSection {
+	background: #5E7A9F url(images/man_chair_grass_fade_bg.jpg) repeat-x bottom;
+	height: 195px;
+}
+#content .topSection.interviewTopSection {
+	background: #5E7A9F url(images/handshake_fade_bg.jpg) repeat-x bottom;
+	height: 195px;
+}
+#content .topSection.cvTopSection {
+	background: #5E7A9F url(images/cv_fade_bg.jpg) repeat-x bottom;
+	height: 195px;
+}
+#content .topSection.selfTopSection {
+	background: #5E7A9F url(images/man_mirror_fade_bg.jpg) repeat-x bottom;
+	height: 195px;
+}
+#content .topSection.recruitersGuideTopSection {
+	background: #5E7A9F url(images/successful_interview_fade_bg.jpg) repeat-x bottom;
+	height: 195px;
+}
+
+/* CV UPLOAD LOGO POSITION */
+#cv_upload {
+	position:relative;
+}
+
+.cv_highlight_img {
+	position:absolute;
+	top:-40px;
+}
+
+#flotTip {
+	white-space:nowrap;
+	border:1px solid #111;
+	padding:3px 8px;
+	background:#fff;
+	font-size:1.2em;
+}
+
+/*  'Pre-selection Questions' CSS */
+.applicationQuestionRow {
+	padding-left:25px;
+	clear:both;
+	padding-top:2px;
+}
+
+.applicationQuestionRow input {
+	width:370px;
+	padding:1px;
+	font-size:14px;
+	padding:5px;
+	border:solid 1px silver;
+}
+
+.applicationQuestionRowDesc {
+	float:left;
+	width:110px;
+	padding-top:5px;
+	font-size:1.2em;
+}
+
+.applicationQuestionRowInput {
+	margin-left:95px;
+}
+
+.applicationQuestionRow .ApplicationErrorHighlight {
+	border:solid 1px red;
+}
+
+.applicationQuestionContainer {
+	margin-bottom:15px;
+}
+
+.applicationQuestionContainer p {
+	font-weight:700;
+}
+
+.applicationQuestionContainer textarea {
+	border:1px silver solid;
+	margin-left:25px;
+	width:610px;
+	height:120px;
+}
+
+.applicationQuestionContainer select {
+	margin-left:25px;
+	border:1px silver solid;
+	padding:3px;
+}
+
+.applicationQuestionContainer input {
+	margin-left:25px;
+}
+
+.applicationQuestionContainer .ApplicationErrorHighlight {
+	border:1px red solid;
+}
+
+.applicationQuestionContainer .formExplainText {
+	font-weight:400;
+	color:gray!important;
+}
+
+#applicationErrorWrapper {
+	border:1px red solid;
+	margin:10px;
+	padding:10px 0;
+}
+
+#applicationErrorWrapper p {
+	color:red!important;
+}
+
+/* FEEDBACK */
+a#feedbackRight {
+    background:url("images/feedback_tab_white.png") no-repeat scroll 50% 50% #5e7a9f;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    border-right: 0px solid #FFFFFF;
+    display:block;
+    height:90px;
+    line-height:0;
+    padding:5px;
+    position:fixed;
+    right:0;
+    text-indent:-99999px;
+    top:50%;
+    width:22px;
+}
+a#feedbackRight:hover {
+    background-color:#2D3E52;
+}
+/* JOB ALERTS */
+.ebSection #jobAlertSubscribe p{
+    
+    padding-right: 3px; 
+    padding-top: 7px;
+}
+.ebSection #jobAlertSubscribe p.radioLabel{
+    padding-top: 5px;
+    padding-right: 3px; 
+    padding-left: 3px;
+}
+
+.ebSection #jobAlertSubscribe form{
+    padding: 3px;
+}
+.ebSection #jobAlertSubscribe form > input,
+.ebSection #jobAlertSubscribe form > p
+{
+	display:inline;
+}
+.ebSection #jobAlertSubscribe form input[type='text']{
+    width:200px; 
+    padding: 3px;
+}
+.ebSection #jobAlertSubscribe form input[type='radio']{
+    margin-top: 6px; 
+    margin-left: 3px;
+}
+.ebSection #jobAlertSubscribe form input[type='submit']{
+    padding: 2px;
+    margin-left: 4px;
+}
+
+/* leave at end of stylesheet to overwrite other display properties */
+.mobileOnly {
+	display:none;
+}

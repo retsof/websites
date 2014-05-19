@@ -1,0 +1,46 @@
+# $Id: .htaccess 6196 2013-12-06 11:59:44Z jamescollier $ 
+
+<FilesMatch "\.(ico|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control: "max-age=2592000"
+</FilesMatch>
+
+ErrorDocument 404 /not_found
+
+Options FollowSymLinks
+RewriteEngine on
+
+# Used to make restful job search URLs use index action
+RewriteRule ^job_search/(.*)$ index.php?uri=job_search/index/$1  [L]
+
+# If match jobs/xxx then redirect to /job_search?descriptive[]=xxx
+RewriteRule ^jobs/([^/\.]+)$ /job_search?descriptive[]=$1 [L]
+
+# If match jobs/category/xxx/country/yyy then redirect to job_search.php?descriptive[]=xxx&descriptive[]=yyy
+RewriteRule ^jobs/category/([^/\.]+)/country/([^/\.]+)$ /job_search?descriptive[]=$1&descriptive[]=$2 [L]
+
+# If match jobs_at/xxx/nnn then redirect to /job_search?organisation=xxx
+RewriteRule ^jobs_at/.*/([0-9]+)$ /job_search?organisation=$1 [L]
+
+# If match jobs/yyy then remove jobs/ (for images and links)
+RewriteRule ^jobs/(.*)$ /$1 [R]
+
+# Rewrite job_display/nnn/* as /job/display?job_id=nnn
+RewriteRule ^job_display/([0-9]+)/.*$ /job/display?job_id=$1 [L]
+
+# Rewrite counter/nnn as counter.php?counter_id=nnn
+RewriteRule ^counter/([0-9]+)/.*$ counter/index?counter_id=$1 [L]
+
+# Rewrite job_apply/nnn/* as /job/apply?job_id=nnn
+RewriteRule ^job_apply/([0-9]+)/.*$ /job/apply?job_id=$1 [L]
+
+# Route all traffic via index.php (router)
+# Rewrite website.com/xyz index.php?uri=xyz
+# Rewrite website.com/abc/def index.php?uri=abc/def
+RewriteEngine On
+#Don't rewrite if *.shtml is requested. This stops a 401.shtml request on a protected directory from returning a 404 
+RewriteCond %{REQUEST_FILENAME} !\.shtml$
+#Don't rewrite if request matches a directory 
+RewriteCond %{REQUEST_FILENAME} !-d
+#Don't rewrite if request matches a file
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^(.*)$   index.php?uri=$1    [NC,L,QSA]

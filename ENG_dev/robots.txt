@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /eb_include/
+Disallow: /data/
+Disallow: /ourjobs/
+Disallow: /images/
+Disallow: highlighted_infobox_json.php
+Sitemap: http://www.eurosciencejobs.com/sitemap.xml
